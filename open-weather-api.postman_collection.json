@@ -1,0 +1,111 @@
+{
+	"id": "f43e2035-6a26-629b-e3c3-64f62d78c065",
+	"name": "open-weather-api",
+	"description": "",
+	"order": [
+		"68ae3b20-a7ae-968b-9523-64972b2799d6",
+		"a377e215-4b3e-53cb-6a05-54c9081e7d81",
+		"9b9c16aa-251d-2f61-74cb-a10af04b0536"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1653290545016,
+	"owner": "10996755",
+	"public": false,
+	"requests": [
+		{
+			"id": "68ae3b20-a7ae-968b-9523-64972b2799d6",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/v1/city",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "f43e2035-6a26-629b-e3c3-64f62d78c065",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create a city",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1653290577974,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"city_name\":\"Salem\"\n}"
+		},
+		{
+			"id": "9b9c16aa-251d-2f61-74cb-a10af04b0536",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/api/v1/weather/five-days/salem",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f43e2035-6a26-629b-e3c3-64f62d78c065",
+			"data": null,
+			"dataMode": "params",
+			"name": "Five days weather report of a city",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1653290675297,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a377e215-4b3e-53cb-6a05-54c9081e7d81",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/v1/weather/salem",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1653290647332,
+			"name": "Weather report of a city",
+			"description": "",
+			"collectionId": "f43e2035-6a26-629b-e3c3-64f62d78c065",
+			"responses": []
+		}
+	]
+}
