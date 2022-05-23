@@ -13,6 +13,6 @@
 
 - cd weather_api `composer install`
 
-- `php artisan migrate`
+- `php artisan migrate:fresh`
 
 - `php artisan serve`
